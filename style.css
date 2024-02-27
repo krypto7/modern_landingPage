@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+#back{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#top{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.26);
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+#workingArea{   
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+#nav{
+    pointer-events: all;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navLeft,#navRight{
+    display: flex;
+    align-items: center;
+    gap:  30px;
+}
+#navLeft img{
+    height: 30px;
+}
+#navLeft a{
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    gap: 20px;
+    font-family: "Oswald";
+}
+#navRight a{
+    color: white;
+    font-family:'Oswald';
+    text-decoration: none;
+    align-items: center;
+    gap: 20px;
+}
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%); 
+    width: 100%;
+    /* height: 100px; */
+    display: flex;
+    justify-content: space-between;
+}
+#heroLeft{ 
+    min-width: 50%;
+}
+
+#heroLeft .elem{
+    height: 9.5vw;
+    position: relative;
+    overflow: hidden; 
+}
+#heroLeft .elem h1:nth-child(1){
+    top: 0;
+}
+#heroLeft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family: "Kajiro";
+    font-weight: 100;
+    font-size: 11vw;
+    color: white;
+    line-height: .9;
+}
+#heroLeft button{
+    padding: 1vw 2vw;
+    margin-top: 1vw;
+    font-size: 2vw;
+    font-family: "Kajiro";
+    pointer-events: all;
+}
+#heroRight{
+    width: 17%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#heroRight .paraImage{
+    width: 100%;
+    height: 170px;
+    background-color: gray;
+    background-image: url(https://images.unsplash.com/photo-1509098681029-b45e9c845022?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-position: center;
+}
+#heroRight p{
+    text-align: right;
+    font-size: 14px;
+}
+
+#heroRight p:nth-child(3){
+    margin-bottom: 40px;
+}
